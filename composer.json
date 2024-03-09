@@ -1,0 +1,23 @@
+{
+  "name": "Ambiene/papyrus",
+  "description": "Laravel package to lookup books on GoogleBooks",
+  "type": "library",
+  "license": "mit",
+  "autoload": {
+    "psr-4": {
+      "Ambiene\\Papyrus\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": ["Ambiene\\Papyrus\\ServiceProvider"],
+      "aliases": {
+        "Papyrus": "Ambiene\\Papyrus\\Facades\\Papyrus"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "guzzlehttp/guzzle": "7.8"
+  }
+}
